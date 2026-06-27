@@ -1,0 +1,7 @@
+# -*- mode:python -*-
+
+Import('*')
+
+SimObject('PNMCompactor.py', sim_objects=['PNMCompactor'])
+Source('pnm_compactor.cc')
+DebugFlag('PNMCompactor')

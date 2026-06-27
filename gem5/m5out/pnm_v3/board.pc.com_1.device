@@ -1,0 +1,1012 @@
+[    0.000000] Linux version 6.8.0-52-generic (buildd@lcy02-amd64-046) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #53-Ubuntu SMP PREEMPT_DYNAMIC Sat Jan 11 00:06:25 UTC 2025 (Ubuntu 6.8.0-52.53-generic 6.8.12)
+[    0.000000] Command line: earlyprintk=ttyS0 console=ttyS0 lpj=7999923 root=/dev/sda2
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bfffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000ffff0000-0x00000000ffffffff] reserved
+[    0.000000] printk: legacy bootconsole [earlyser0] enabled
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] SMBIOS 2.5 present.
+[    0.000000] DMI:  , BIOS  06/08/2008
+[    0.000000] tsc: Fast TSC calibration failed
+[    0.000000] last_pfn = 0xc0000 max_arch_pfn = 0x400000000
+[    0.000000] MTRRs disabled by BIOS
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT
+[    0.000000] found SMP MP-table at [mem 0x000f0050-0x000f005f]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000F01C0 000024 (v02 gem5  )
+[    0.000000] ACPI: XSDT 0x00000000000F03C8 00002C (v01 gem5            00000000      00000000)
+[    0.000000] ACPI: APIC 0x00000000000F02EA 0000DE (v04 madt            00000000      00000000)
+[    0.000000] ACPI: Reserving APIC table memory at [mem 0xf02ea-0xf03c7]
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x00000000bfffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0xbffd4000-0xbfffefff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000bfffffff]
+[    0.000000]   Normal   empty
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x00000000bfffffff]
+[    0.000000] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.000000] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.000000] IOAPIC[0]: apic_id 2, version 20, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 16 global_irq 16 dfl dfl)
+[    0.000000] ACPI: Invalid bus_irq 16 for legacy override
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 1 global_irq 1 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 3 global_irq 3 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 4 global_irq 4 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 5 global_irq 5 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 6 global_irq 6 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 7 global_irq 7 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 8 global_irq 8 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 9 global_irq 9 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 10 global_irq 10 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 11 global_irq 11 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 12 global_irq 12 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 13 global_irq 13 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 1 bus_irq 14 global_irq 14 dfl dfl)
+[    0.000000] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.000000] smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.000000] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[    0.000000] [mem 0xc0000000-0xfffeffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+[    0.000000] percpu: Embedded 86 pages/cpu s229376 r8192 d114688 u1048576
+[    0.000000] Kernel command line: earlyprintk=ttyS0 console=ttyS0 lpj=7999923 root=/dev/sda2
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Fallback order for Node 0: 0
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 773888
+[    0.000000] Policy zone: DMA32
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] Memory: 3036960K/3145336K available (22528K kernel code, 4442K rwdata, 14332K rodata, 4976K init, 4732K bss, 108120K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Poking KASLR using RDTSC...
+[    0.000000] ftrace: allocating 57955 entries in 227 pages
+[    0.000000] ftrace: allocated 227 pages with 5 groups
+[    0.000000] Dynamic Preempt: voluntary
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=2.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 524544, nr_irqs: 440, preallocated irqs: 16
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] Console: colour dummy device 80x25
+[    0.000000] printk: legacy console [ttyS0] enabled
+[    0.000000] printk: legacy console [ttyS0] enabled
+[    0.000000] printk: legacy bootconsole [earlyser0] disabled
+[    0.000000] printk: legacy bootconsole [earlyser0] disabled
+[    0.000000] ACPI: Core revision 20230628
+[    0.000000] APIC: Switch to symmetric I/O mode setup
+[    0.000000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.008000] tsc: Unable to calibrate against PIT
+[    0.009000] tsc: No reference (HPET/PMTIMER) available
+[    0.010000] tsc: Marking TSC unstable due to could not calculate TSC khz
+[    0.011000] Calibrating delay loop (skipped) preset value.. 15999.84 BogoMIPS (lpj=7999923)
+[    0.013000] process: using mwait in idle threads
+[    0.014000] Last level iTLB entries: 4KB 512, 2MB 8, 4MB 4
+[    0.015000] Last level dTLB entries: 4KB 512, 2MB 8, 4MB 4, 1GB 0
+[    0.017000] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.018000] Spectre V2 : Mitigation: Retpolines
+[    0.019000] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.020000] Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+[    0.021000] Speculative Store Bypass: Vulnerable
+[    0.022000] x86/fpu: x87 FPU will use FXSAVE
+[    0.054000] Freeing SMP alternatives memory: 48K
+[    0.055000] pid_max: default: 32768 minimum: 301
+[    0.057000] LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+[    0.058000] landlock: Up and running.
+[    0.059000] Yama: becoming mindful.
+[    0.060000] AppArmor: AppArmor initialized
+[    0.061000] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.063000] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.065000] ACPI Warning: AcpiEnable failed (20230628/utxfinit-135)
+[    0.066000] ACPI: Unable to enable ACPI
+[    0.271000] smpboot: CPU0: Hygon Fake gem5 x86_64 CPU (family: 0xf, model: 0x25, stepping: 0x1)
+[    0.273000] RCU Tasks: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.274000] RCU Tasks Rude: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.275000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1.
+[    0.276000] Performance Events: Broken PMU hardware detected, using software events only.
+[    0.278000] Failed to access perfctr msr (MSR c0010007 is 0)
+[    0.279000] signal: max sigframe size: 1440
+[    0.280000] rcu: Hierarchical SRCU implementation.
+[    0.281000] rcu: 	Max phase no-delay instances is 400.
+[    0.283000] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.285000] smp: Bringing up secondary CPUs ...
+[    0.287000] smpboot: x86: Booting SMP configuration:
+[    0.288000] .... node  #0, CPUs:      #1
+[    0.330000] smp: Brought up 1 node, 2 CPUs
+[    0.332000] smpboot: Max logical packages: 2
+[    0.333000] smpboot: Total of 2 processors activated (31999.69 BogoMIPS)
+[    0.336000] devtmpfs: initialized
+[    0.337000] x86/mm: Memory block size: 128MB
+[    0.340000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.341000] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.342000] pinctrl core: initialized pinctrl subsystem
+[    0.344000] PM: RTC time: 00:00:00, date: 2012-01-01
+[    0.348000] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.349000] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.351000] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.352000] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.353000] audit: initializing netlink subsys (disabled)
+[    0.354000] audit: type=2000 audit(1325376000.354:1): state=initialized audit_enabled=0 res=1
+[    0.355000] thermal_sys: Registered thermal governor 'fair_share'
+[    0.356000] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.357000] thermal_sys: Registered thermal governor 'step_wise'
+[    0.358000] thermal_sys: Registered thermal governor 'user_space'
+[    0.359000] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.360000] EISA bus registered
+[    0.363000] cpuidle: using governor ladder
+[    0.365000] cpuidle: using governor menu
+[    0.367000] PCI: Using configuration type 1 for base access
+[    0.368000] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.389000] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.393000] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.398000] ACPI: Interpreter disabled.
+[    0.401000] iommu: Default domain type: Translated
+[    0.403000] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.407000] SCSI subsystem initialized
+[    0.409000] usbcore: registered new interface driver usbfs
+[    0.412000] usbcore: registered new interface driver hub
+[    0.415000] usbcore: registered new device driver usb
+[    0.417000] pps_core: LinuxPPS API ver. 1 registered
+[    0.420000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.425000] PTP clock support registered
+[    0.427000] EDAC MC: Ver: 3.0.0
+[    0.430000] NetLabel: Initializing
+[    0.432000] NetLabel:  domain hash size = 128
+[    0.435000] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.438000] NetLabel:  unlabeled traffic allowed by default
+[    0.441000] mctp: management component transport protocol core
+[    0.444000] NET: Registered PF_MCTP protocol family
+[    0.446000] PCI: Probing PCI hardware
+[    0.448000] PCI host bridge to bus 0000:00
+[    0.451000] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.454000] pci_bus 0000:00: root bus resource [mem 0x00000000-0xffffffffffff]
+[    0.457000] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+[    0.462000] pci 0000:00:04.0: [8086:7111] type 00 class 0x010180 conventional PCI endpoint
+[    0.467000] pci 0000:00:04.0: BAR 4 [io  0x0000-0x000f]
+[    0.471000] pci 0000:00:04.0: ROM [mem 0x00000000-0x000007ff pref]
+[    0.474000] pci 0000:00:04.0: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+[    0.478000] pci 0000:00:04.0: BAR 1 [io  0x03f6]: legacy IDE quirk
+[    0.481000] pci 0000:00:04.0: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+[    0.484000] pci 0000:00:04.0: BAR 3 [io  0x0376]: legacy IDE quirk
+[    0.489000] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 00
+[    0.493000] vgaarb: loaded
+[    0.495000] clocksource: Switched to clocksource refined-jiffies
+[    0.498999] VFS: Disk quotas dquot_6.6.0
+[    0.502998] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.507998] AppArmor: AppArmor Filesystem Enabled
+[    0.510997] pnp: PnP ACPI: disabled
+[    0.515996] NET: Registered PF_INET protocol family
+[    0.519996] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.548991] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.553991] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.558990] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.563989] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+[    0.569988] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.574987] MPTCP token hash table entries: 4096 (order: 4, 98304 bytes, linear)
+[    0.579987] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.584986] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    0.589985] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.593984] NET: Registered PF_XDP protocol family
+[    0.596984] pci 0000:00:04.0: ROM [mem 0xc0000000-0xc00007ff pref]: assigned
+[    0.601983] pci 0000:00:04.0: BAR 4 [io  0x1000-0x100f]: assigned
+[    0.605983] pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+[    0.609982] pci_bus 0000:00: resource 5 [mem 0x00000000-0xffffffffffff]
+[    0.614981] PCI: CLS 0 bytes, default 64
+[    0.618981] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.622980] Initialise system trusted keyrings
+[    0.624980] Key type blacklist registered
+[    0.627979] workingset: timestamp_bits=36 max_order=20 bucket_order=0
+[    0.630979] zbud: loaded
+[    0.632979] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.636978] fuse: init (API version 7.39)
+[    0.639978] integrity: Platform Keyring initialized
+[    0.641977] integrity: Machine keyring initialized
+[    0.671973] Key type asymmetric registered
+[    0.674972] Asymmetric key parser 'x509' registered
+[    0.677972] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+[    0.680971] io scheduler mq-deadline registered
+[    0.683971] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.686970] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.690970] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 8250
+[    0.697969] Linux agpgart interface v0.103
+[    0.704968] loop: module loaded
+[    0.706967] ata_piix 0000:00:04.0: enabling device (0000 -> 0001)
+[    0.710967] scsi host0: ata_piix
+[    0.712966] scsi host1: ata_piix
+[    0.714966] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0x1000 irq 14 lpm-pol 0
+[    0.717966] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0x1008 irq 15 lpm-pol 0
+[    0.723965] tun: Universal TUN/TAP device driver, 1.6
+[    0.725964] PPP generic driver version 2.4.2
+[    0.726964] i8042: PNP: No PS/2 controller found.
+[    0.727964] i8042: Probing ports directly.
+[    0.732963] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.733963] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.735963] mousedev: PS/2 mouse device common for all mice
+[    0.738962] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[    0.741962] rtc_cmos rtc_cmos: registered as rtc0
+[    0.742962] rtc_cmos rtc_cmos: setting system clock to 2012-01-01T00:00:01 UTC (1325376001)
+[    0.743962] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    0.744962] i2c_dev: i2c /dev entries driver
+[    0.745961] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    0.746961] device-mapper: uevent: version 1.0.3
+[    0.747961] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+[    0.748961] platform eisa.0: Probing EISA bus 0
+[    0.749961] eisa 00:00: EISA: Mainboard @@@0000 detected
+[    0.750961] platform eisa.0: Cannot allocate resource for EISA slot 1
+[    0.751960] eisa 00:02: EISA: slot 2: @@@0000 detected (disabled)
+[    0.752960] eisa 00:03: EISA: slot 3: @@@0000 detected (disabled)
+[    0.753960] eisa 00:04: EISA: slot 4: @@@0000 detected (disabled)
+[    0.754960] eisa 00:05: EISA: slot 5: @@@0000 detected (disabled)
+[    0.755960] eisa 00:06: EISA: slot 6: @@@0000 detected (disabled)
+[    0.756960] eisa 00:07: EISA: slot 7: @@@0000 detected (disabled)
+[    0.757960] eisa 00:08: EISA: slot 8: @@@0000 detected (disabled)
+[    0.758959] platform eisa.0: EISA: Detected 7 cards
+[    0.760959] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.762959] drop_monitor: Initializing network drop monitor service
+[    0.764958] NET: Registered PF_INET6 protocol family
+[    0.767958] Segment Routing with IPv6
+[    0.768958] In-situ OAM (IOAM) with IPv6
+[    0.769958] NET: Registered PF_PACKET protocol family
+[    0.771957] Key type dns_resolver registered
+[    0.773957] IPI shorthand broadcast: enabled
+[    0.779956] registered taskstats version 1
+[    0.781956] Loading compiled-in X.509 certificates
+[    0.784955] Loaded X.509 cert 'Build time autogenerated kernel key: 6a754efd21900cf3870612feb9f998f3da0db082'
+[    0.786955] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    0.789955] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    0.790955] blacklist: Loading compiled-in revocation X.509 certificates
+[    0.791954] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    0.792954] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    0.793954] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    0.794954] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    0.795954] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    0.796954] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    0.797953] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    0.798953] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    0.807952] Key type .fscrypt registered
+[    0.808952] Key type fscrypt-provisioning registered
+[    0.811951] Key type encrypted registered
+[    0.812951] AppArmor: AppArmor sha256 policy hashing enabled
+[    0.814951] ima: No TPM chip found, activating TPM-bypass!
+[    0.815951] Loading compiled-in module X.509 certificates
+[    0.816951] Loaded X.509 cert 'Build time autogenerated kernel key: 6a754efd21900cf3870612feb9f998f3da0db082'
+[    0.817950] ima: Allocated hash algorithm: sha256
+[    0.818950] ima: No architecture policies found
+[    0.819950] evm: Initialising EVM extended attributes:
+[    0.820950] evm: security.selinux
+[    0.821950] evm: security.SMACK64
+[    0.822950] evm: security.SMACK64EXEC
+[    0.823949] evm: security.SMACK64TRANSMUTE
+[    0.824949] evm: security.SMACK64MMAP
+[    0.825949] evm: security.apparmor
+[    0.827949] evm: security.ima
+[    0.828949] evm: security.capability
+[    0.829949] evm: HMAC attrs: 0x1
+[    0.831948] PM:   Magic number: 12:0:0
+[    0.837947] RAS: Correctable Errors collector initialized.
+[    0.838947] Unstable clock detected, switching default tracing clock to "global"
+[    0.838947] If you want to keep using the local clock, then add:
+[    0.838947]   "trace_clock=local"
+[    0.838947] on the kernel command line
+[    0.839947] clk: Disabling unused clocks
+[    0.882941] ata1.00: ATA-7: M5 IDE Disk, , max UDMA/66
+[    0.884940] ata1.00: 10240000 sectors, multi 0: LBA
+[    0.888940] scsi 0:0:0:0: Direct-Access     ATA      M5 IDE Disk      n/a  PQ: 0 ANSI: 5
+[    0.892939] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    0.894939] sd 0:0:0:0: [sda] 10240000 512-byte logical blocks: (5.24 GB/4.88 GiB)
+[    0.896938] sd 0:0:0:0: [sda] Write Protect is off
+[    0.897938] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    0.898938] sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+[    0.922934]  sda: sda1 sda2
+[    0.923934] sd 0:0:0:0: [sda] Attached SCSI disk
+[    0.924934] md: Waiting for all devices to be available before autodetect
+[    0.925934] md: If you don't use raid, use raid=noautodetect
+[    0.926934] md: Autodetecting RAID arrays.
+[    0.927934] md: autorun ...
+[    0.928934] md: ... autorun DONE.
+[    0.947931] EXT4-fs (sda2): mounted filesystem dffd3103-0a16-461e-98d2-50bbfa073fe8 r/w with ordered data mode. Quota mode: none.
+[    0.948930] VFS: Mounted root (ext4 filesystem) on device 8:2.
+[    0.954930] devtmpfs: mounted
+[    0.958929] Freeing unused decrypted memory: 2028K
+[    0.962928] Freeing unused kernel image (initmem) memory: 4976K
+[    0.963928] Write protecting the kernel read-only data: 36864k
+[    0.965928] Freeing unused kernel image (rodata/data gap) memory: 4K
+[    1.016920] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.017920] Run /sbin/init as init process
+[    1.387864] gem5_bridge: loading out-of-tree module taints kernel.
+[    1.390863] gem5_bridge: module verification failed: signature and/or required key missing - tainting kernel
+[    1.397862] gem5_bridge_init: SUCCESS!
+Kernel booted, In gem5 init...
+[    1.448854] gem5_bridge_open: SUCCESS!
+[    1.449854] gem5_bridge_mmap: SUCCESS!
+[    1.453854] gem5_bridge_release: SUCCESS!
+Starting systemd...
+[    1.620828] systemd[1]: System time before build time, advancing clock.
+[    1.643825] systemd[1]: Inserted module 'autofs4'
+[    1.709815] systemd[1]: systemd 255.4-1ubuntu8 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    1.724813] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mUbuntu 24.04 LTS[0m!
+
+[    1.774805] systemd[1]: Hostname set to <gem5>.
+[    2.262731] systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    2.621676] systemd[1]: Queued start job for default target multi-user.target.
+[    2.638674] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-modprobe.slice[0m - Slice /system/modprobe.
+[    2.736659] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-serial\x2dget…slice[0m - Slice /system/serial-getty.
+[    2.842643] systemd[1]: Created slice user.slice - User and Session Slice.
+[[0;32m  OK  [0m] Created slice [0;1;39muser.slice[0m - User and Session Slice.
+[    2.929629] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-ask-password-wall.…[0md Requests to Wall Directory Watch.
+[    3.035613] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[[0;32m  OK  [0m] Set up automount [0;1;39mproc-sys-fs-binfm…[0mormats File System Automount Point.
+[    3.143597] systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+         Expecting device [0;1;39mdev-ttyS0.device[0m - /dev/ttyS0...
+[    3.215586] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[[0;32m  OK  [0m] Reached target [0;1;39mintegritysetup.targ…[0m Local Integrity Protected Volumes.
+[    3.323569] systemd[1]: Reached target slices.target - Slice Units.
+[[0;32m  OK  [0m] Reached target [0;1;39mslices.target[0m - Slice Units.
+[    3.402557] systemd[1]: Reached target swap.target - Swaps.
+[[0;32m  OK  [0m] Reached target [0;1;39mswap.target[0m - Swaps.
+[    3.472547] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[[0;32m  OK  [0m] Reached target [0;1;39mveritysetup.target[0m - Local Verity Protected Volumes.
+[    3.575531] systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+[[0;32m  OK  [0m] Listening on [0;1;39mdm-event.socket[0m - Device-mapper event daemon FIFOs.
+[    3.678516] systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+[[0;32m  OK  [0m] Listening on [0;1;39mlvm2-lvmpolld.socket[0m - LVM2 poll daemon socket.
+[    3.779500] systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-fsckd.socket[0m …fsck to fsckd communication Socket.
+[    3.889483] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-initctl.socke…[0m- initctl Compatibility Named Pipe.
+[    4.001466] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-journald-dev-…socket[0m - Journal Socket (/dev/log).
+[    4.111450] systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-journald.socket[0m - Journal Socket.
+[    4.205435] systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-networkd.socket[0m - Network Service Netlink Socket.
+[    4.314419] systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    4.328417] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-udevd-control.socket[0m - udev Control Socket.
+[    4.428402] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-udevd-kernel.socket[0m - udev Kernel Socket.
+[    4.532386] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+         Mounting [0;1;39mdev-hugepages.mount[0m - Huge Pages File System...
+[    4.623372] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+         Mounting [0;1;39mdev-mqueue.mount[0m - POSIX Message Queue File System...
+[    4.718358] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+         Mounting [0;1;39msys-kernel-debug.mount[0m - Kernel Debug File System...
+[    4.819342] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+         Mounting [0;1;39msys-kernel-tracing.mount[0m - Kernel Trace File System...
+[    4.918327] systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+         Starting [0;1;39mkeyboard-setup.service[0m - Set the console keyboard layout...
+[    5.019312] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+         Starting [0;1;39mkmod-static-nodes.service[0m…eate List of Static Device Nodes...
+[    5.123296] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+         Starting [0;1;39mmodprobe@configfs.service[0m - Load Kernel Module configfs...
+[    5.221281] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+         Starting [0;1;39mmodprobe@dm_mod.service[0m - Load Kernel Module dm_mod...
+[    5.315267] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+         Starting [0;1;39mmodprobe@drm.service[0m - Load Kernel Module drm...
+[    5.408253] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+         Starting [0;1;39mmodprobe@efi_pstore.servi…[0m - Load Kernel Module efi_pstore...
+[    5.511237] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+         Starting [0;1;39mmodprobe@fuse.service[0m - Load Kernel Module fuse...
+[    5.601223] systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+         Starting [0;1;39mmodprobe@loop.service[0m - Load Kernel Module loop...
+[    5.686210] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+[    5.687210] systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+[    5.701208] systemd[1]: Starting systemd-journald.service - Journal Service...
+         Starting [0;1;[    5.726204] systemd-journald[148]: Collecting audit messages is disabled.
+39msystemd-journald.service[0m - Journal Service...
+[    5.793194] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+         Starting [0;1;39msystemd-modules-load.service[0m - Load Kernel Modules...
+[    5.878181] systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    5.891179] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+         Starting [0;[    5.917175] EXT4-fs (sda2): re-mounted dffd3103-0a16-461e-98d2-50bbfa073fe8 r/w. Quota mode: none.
+1;39msystemd-remount-fs.servic…[0munt Root and Kernel File Systems...
+[    5.996163] systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[    6.011161] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+       [    6.018160] random: crng init done
+  Starting [0;1;39msystemd-udev-trigger.service[0m - Coldplug All udev Devices...
+[    6.103147] systemd[1]: Started systemd-journald.service - Journal Service.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-journald.service[0m - Journal Service.
+[[0;32m  OK  [0m] Mounted [0;1;39mdev-hugepages.mount[0m - Huge Pages File System.
+[[0;32m  OK  [0m] Mounted [0;1;39mdev-mqueue.mount[0m - POSIX Message Queue File System.
+[[0;32m  OK  [0m] Mounted [0;1;39msys-kernel-debug.mount[0m - Kernel Debug File System.
+[[0;32m  OK  [0m] Mounted [0;1;39msys-kernel-tracing.mount[0m - Kernel Trace File System.
+[[0;32m  OK  [0m] Finished [0;1;39mkeyboard-setup.service[0m - Set the console keyboard layout.
+[[0;32m  OK  [0m] Finished [0;1;39mkmod-static-nodes.service[0m…Create List of Static Device Nodes.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@configfs.service[0m - Load Kernel Module configfs.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@dm_mod.service[0m - Load Kernel Module dm_mod.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@drm.service[0m - Load Kernel Module drm.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@efi_pstore.service[0m - Load Kernel Module efi_pstore.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@fuse.service[0m - Load Kernel Module fuse.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@loop.service[0m - Load Kernel Module loop.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-modules-load.service[0m - Load Kernel Modules.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-remount-fs.servic…[0mmount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-udev-trigger.service[0m - Coldplug All udev Devices.
+         Mounting [0;1;39msys-fs-fuse-connections.mount[0m - FUSE Control File System...
+         Mounting [0;1;39msys-kernel-config.mount[0m - Kernel Configuration File System...
+         Starting [0;1;39msystemd-journal-flush.ser…[0msh Journal to Persistent Storage...
+         [    7.980861] systemd-journald[148]: Received client request to flush runtime journal.
+Starting [0;1;39msystemd-random-seed.service[0[    8.031854] systemd-journald[148]: /var/log/journal/14e1e41a044a4716b3c7e533ac5b8c55/system.journal: Realtime clock jumped backwards relative to last journal entry, rotating.
+m[    8.041852] systemd-journald[148]: Rotating system journal.
+ - Load/Save OS Random Seed...
+         Starting [0;1;39msystemd-sysctl.service[0m - Apply Kernel Variables...
+         Starting [0;1;39msystemd-tmpfiles-setup-de…[0m Device Nodes in /dev gracefully...
+[[0;32m  OK  [0m] Mounted [0;1;39msys-fs-fuse-connections.mount[0m - FUSE Control File System.
+[[0;32m  OK  [0m] Mounted [0;1;39msys-kernel-config.mount[0m - Kernel Configuration File System.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-journal-flush.ser…[0mlush Journal to Persistent Storage.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-random-seed.service[0m - Load/Save OS Random Seed.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-sysctl.service[0m - Apply Kernel Variables.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-tmpfiles-setup-de…[0mic Device Nodes in /dev gracefully.
+         Starting [0;1;39msystemd-tmpfiles-setup-de…[0meate Static Device Nodes in /dev...
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-tmpfiles-setup-de…[0mCreate Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Reached target [0;1;39mlocal-fs-pre.target[0m…Preparation for Local File Systems.
+[[0;32m  OK  [0m] Reached target [0;1;39mlocal-fs.target[0m - Local File Systems.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-sysext.socket[0m…tension Image Management (Varlink).
+         Starting [0;1;39mconsole-setup.service[0m - Set console font and keymap...
+         Starting [0;1;39mfinalrd.service[0m - Create …time dir for shutdown pivot root...
+         Starting [0;1;39mplymouth-read-write.servi…[0mymouth To Write Out Runtime Data...
+         Starting [0;1;39msystemd-binfmt.service[0m - Set Up Additional Binary Formats...
+         Starting [0;1;39msystemd-tmpfiles-setup.se…[0me Volatile Files and Directories...
+         Starting [0;1;39msystemd-udevd.service[0m - R…ager for Device Events and Files...
+[[0;32m  OK  [0m] Finished [0;1;39mconsole-setup.service[0m - Set console font and keymap.
+[[0;32m  OK  [0m] Finished [0;1;39mfinalrd.service[0m - Create …untime dir for shutdown pivot root.
+[[0;32m  OK  [0m] Finished [0;1;39mplymouth-read-write.servi…[0mPlymouth To Write Out Runtime Data.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-udevd.service[0m - Ru…anager for Device Events and Files.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-tmpfiles-setup.se…[0mate Volatile Files and Directories.
+[[0;32m  OK  [0m] Found device [0;1;39mdev-ttyS0.device[0m - /dev/ttyS0.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-rfkill.socket[0m…ll Switch Status /dev/rfkill Watch.
+         Mounting [0;1;39mproc-sys-fs-binfmt_misc.m…[0mcutable File Formats File System...
+[[0;32m  OK  [0m] Started [0;1;39msystemd-ask-password-conso…[0mequests to Console Directory Watch.
+[[0;32m  OK  [0m] Reached target [0;1;39mcryptsetup.target[0m - Local Encrypted Volumes.
+         Starting [0;1;39msystemd-networkd.service[0m - Network Configuration...
+         Starting [0;1;39msystemd-resolved.service[0m - Network Name Resolution...
+         Starting [0;1;39msystemd-timesyncd.service[0m - Network Time Synchronization...
+         Starting [0;1;39msystemd-update-utmp.servi…[0mord System Boot/Shutdown in UTMP...
+[[0;32m  OK  [0m] Mounted [0;1;39mproc-sys-fs-binfmt_misc.mo…[0mxecutable File Formats File System.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-binfmt.service[0m - Set Up Additional Binary Formats.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-update-utmp.servi…[0mecord System Boot/Shutdown in UTMP.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-timesyncd.service[0m - Network Time Synchronization.
+[[0;32m  OK  [0m] Reached target [0;1;39mtime-set.target[0m - System Time Set.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-resolved.service[0m - Network Name Resolution.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-networkd.service[0m - Network Configuration.
+[[0;32m  OK  [0m] Reached target [0;1;39mnetwork.target[0m - Network.
+[[0;32m  OK  [0m] Reached target [0;1;39mnetwork-online.target[0m - Network is Online.
+[[0;32m  OK  [0m] Reached target [0;1;39mnss-lookup.target[0m - Host and Network Name Lookups.
+[[0;32m  OK  [0m] Reached target [0;1;39msysinit.target[0m - System Initialization.
+[[0;32m  OK  [0m] Started [0;1;39mdpkg-db-backup.timer[0m - Daily dpkg database backup timer.
+[[0;32m  OK  [0m] Started [0;1;39me2scrub_all.timer[0m - Period…Metadata Check for All Filesystems.
+[[0;32m  OK  [0m] Started [0;1;39mmotd-news.timer[0m - Message of the Day.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-tmpfiles-clean.tim…[0my Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Reached target [0;1;39mpaths.target[0m - Path Units.
+[[0;32m  OK  [0m] Reached target [0;1;39mtimers.target[0m - Timer Units.
+[[0;32m  OK  [0m] Listening on [0;1;39mdbus.socket[0m - D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39miscsid.socket[0m - Open-iSCSI iscsid Socket.
+         Starting [0;1;39mlxd-installer.socket[0m - He…er to install lxd snap on demand...
+         Starting [0;1;39msnapd.socket[0m - Socket activation for snappy daemon...
+[[0;32m  OK  [0m] Listening on [0;1;39mssh.socket[0m - OpenBSD Secure Shell server socket.
+[[0;32m  OK  [0m] Reached target [0;1;39mremote-fs-pre.targe…[0mreparation for Remote File Systems.
+[[0;32m  OK  [0m] Reached target [0;1;39mremote-fs.target[0m - Remote File Systems.
+[[0;32m  OK  [0m] Finished [0;1;39mblk-availability.service[0m - Availability of block devices.
+[[0;32m  OK  [0m] Listening on [0;1;39mlxd-installer.socket[0m …lper to install lxd snap on demand.
+[[0;32m  OK  [0m] Listening on [0;1;39msnapd.socket[0m - Socket activation for snappy daemon.
+[[0;32m  OK  [0m] Reached target [0;1;39msockets.target[0m - Socket Units.
+[[0;32m  OK  [0m] Reached target [0;1;39mbasic.target[0m - Basic System.
+         Starting [0;1;39msystemd-logind.service[0m - User Login Management...
+         Starting [0;1;39mapport.service[0m - automatic crash report generation...
+         Starting [0;1;39mdbus.service[0m - D-Bus System Message Bus...
+         Starting [0;1;39me2scrub_reap.service[0m - Re…ne ext4 Metadata Check Snapshots...
+         Starting [0;1;39mgrub-common.service[0m - Record successful boot for GRUB...
+[[0;32m  OK  [0m] Reached target [0;1;39mgetty-pre.target[0m - Preparation for Logins.
+         Starting [0;1;39msnapd.seeded.service[0m - Wait until snapd is fully seeded...
+         Starting [0;1;39msystemd-user-sessions.service[0m - Permit User Sessions...
+[[0;32m  OK  [0m] Started [0;1;39msystemd-logind.service[0m - User Login Management.
+[[0;32m  OK  [0m] Started [0;1;39mdbus.service[0m - D-Bus System Message Bus.
+[[0;32m  OK  [0m] Finished [0;1;39me2scrub_reap.service[0m - Re…line ext4 Metadata Check Snapshots.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-user-sessions.service[0m - Permit User Sessions.
+         Starting [0;1;39mplymouth-quit-wait.servic…[0md until boot process finishes up...
+         Starting [0;1;39mplymouth-quit.service[0m - Terminate Plymouth Boot Screen...
+[[0;32m  OK  [0m] Started [0;1;39munattended-upgrades.service[0m - Unattended Upgrades Shutdown.
+[[0;32m  OK  [0m] Finished [0;1;39mplymouth-quit-wait.servic…[0mold until boot process finishes up.
+[[0;32m  OK  [0m] Finished [0;1;39mplymouth-quit.service[0m - Terminate Plymouth Boot Screen.
+[[0;32m  OK  [0m] Finished [0;1;39mgrub-common.service[0m - Record successful boot for GRUB.
+[[0;32m  OK  [0m] Finished [0;1;39mapport.service[0m - automatic crash report generation.
+[[0;32m  OK  [0m] Reached target [0;1;39msnapd.mounts-pre.target[0m - Mounting snaps.
+[[0;32m  OK  [0m] Reached target [0;1;39msnapd.mounts.target[0m - Mounted snaps.
+         Starting [0;1;39mgrub-initrd-fallback.service[0m - GRUB failed boot detection...
+[[0;32m  OK  [0m] Started [0;1;39mserial-getty@ttyS0.service[0m - Serial Getty on ttyS0.
+         Starting [0;1;39msetvtrgb.service[0m - Set console scheme...
+         Starting [0;1;39msnapd.service[0m - Snap Daemon...
+[[0;32m  OK  [0m] Finished [0;1;39msetvtrgb.service[0m - Set console scheme.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-getty.slice[0m - Slice /system/getty.
+[[0;32m  OK  [0m] Started [0;1;39mgetty@tty1.service[0m - Getty on tty1.
+[[0;32m  OK  [0m] Reached target [0;1;39mgetty.target[0m - Login Prompts.
+[[0;32m  OK  [0m] Finished [0;1;39mgrub-initrd-fallback.service[0m - GRUB failed boot detection.
+[[0;32m  OK  [0m] Started [0;1;39msnapd.service[0m - Snap Daemon.
+         Starting [0;1;39msystemd-timedated.service[0m - Time & Date Service...
+[[0;32m  OK  [0m] Finished [0;1;39msnapd.seeded.service[0m - Wait until snapd is fully seeded.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-timedated.service[0m - Time & Date Service.
+[[0;32m  OK  [0m] Reached target [0;1;39mmulti-user.target[0m - Multi-User System.
+         Starting [0;1;39msystemd-update-utmp-runle…[0m- Record Runlevel Change in UTMP...
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-update-utmp-runle…e[0m - Record Runlevel Change in UTMP.
+
+Ubuntu 24.04 LTS gem5 ttyS0
+
+gem5 login: gem5 (automatic login)
+
+In after_boot.sh...
+Interactive mode: false
+Starting gem5 init... trying to read run script file via readfile.
+Running script from gem5-bridge stored in /tmp/script
+[gem5] pnm_module.ko loaded — /dev/pnm ready
+[pnm_unit] sched_setaffinity core 2 failed (Invalid argument) — continuing without pinning
+[pnm_unit] waiting for jobs on /tmp/pnm_compaction.sock
+[pnm] PNM compaction service ready
+Initializing RocksDB Options from the specified file
+Initializing RocksDB Options from command-line flags
+Integrated BlobDB: blob cache disabled
+RocksDB:    version 11.4.0
+Date:       Fri Apr 19 14:24:54 2024
+CPU:        2 * Fake gem5 x86_64 CPU
+CPUCache:   1024 KB
+Keys:       16 bytes each (+ 0 bytes user-defined timestamp)
+Values:     1024 bytes each (512 bytes after compression)
+Entries:    25000
+Prefix:    0 bytes
+Keys per prefix:    0
+RawSize:    24.8 MB (estimated)
+FileSize:   12.6 MB (estimated)
+Write rate: 0 bytes/second
+Read rate: 0 ops/second
+Compression: NoCompression
+Compression sampling rate: 0
+Memtablerep: SkipListFactory
+Perf Level: 1
+------------------------------------------------
+Initializing RocksDB Options from the specified file
+Initializing RocksDB Options from command-line flags
+Integrated BlobDB: blob cache disabled
+DB path: [/tmp/rocksdb_fs_pnm]
+2024/04/19-14:24:54  ... thread 0: (1000,1000) ops and (45460.7,45460.7) ops/second in (0.021997,0.021997) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,2000) ops and (55564.8,50007.5) ops/second in (0.017997,0.039994) seconds
+[compaction] begin  job=5 L0->L1 files_in=2
+[pnm] MMIO submit: src=1962302 dst=1962302 B (2 input files)
+[pnm] dispatched job=21474836480 db=/tmp/rocksdb_fs_pnm
+[compaction] begin  job=21474836480 L0->L1 files_in=2
+[pnm_unit] job=21474836480 db=/tmp/rocksdb_fs_pnm input_bytes=250
+2024/04/19-14:24:54  ... thread 0: (1000,3000) ops and (43483.9,47625.9) ops/second in (0.022997,0.062991) seconds
+[pnm_unit] secondary DB opened at /tmp/rocksdb_fs_pnm (path=/tmp/pnm_secondary)
+2024/04/19-14:24:54  ... thread 0: (1000,4000) ops and (40006.4,45461.3) ops/second in (0.024996,0.087987) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,5000) ops and (40006.4,44254.4) ops/second in (0.024996,0.112983) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,6000) ops and (52639.9,45461.4) ops/second in (0.018997,0.131980) seconds
+[pnm_unit] job=21474836480 done output_bytes=4899 output_path=/tmp/pnm_secondary
+[pnm] job done (status=0 result_bytes=4899)
+[compaction] done   job=21474836480 L0->L1 files_in=2 files_out=1 src=1951045 B dst=1112870 B elapsed=72989 us
+[compaction] done   job=5 L0->L1 files_in=2 files_out=1 src=1962302 B dst=1112870 B elapsed=118982 us
+[compaction] begin  job=9 L0->L1 files_in=4
+[pnm] MMIO submit: src=4046861 dst=4046861 B (4 input files)
+[pnm] dispatched job=38654705664 db=/tmp/rocksdb_fs_pnm
+[compaction] begin  job=38654705664 L0->L1 files_in=4
+[pnm_unit] job=38654705664 db=/tmp/rocksdb_fs_pnm input_bytes=292
+2024/04/19-14:24:54  ... thread 0: (1000,7000) ops and (52639.9,46364.7) ops/second in (0.018997,0.150977) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,8000) ops and (43483.9,45983.9) ops/second in (0.022997,0.173974) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,9000) ops and (55564.8,46882.1) ops/second in (0.017997,0.191971) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,10000) ops and (43483.9,46518.6) ops/second in (0.022997,0.214968) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,11000) ops and (45462.8,46420.6) ops/second in (0.021996,0.236964) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,12000) ops and (58830.5,47251.2) ops/second in (0.016998,0.253962) seconds
+[pnm_unit] job=38654705664 done output_bytes=4909 output_path=/tmp/pnm_secondary
+[pnm] job done (status=0 result_bytes=4909)
+[compaction] done   job=38654705664 L0->L1 files_in=4 files_out=1 src=4023138 B dst=2616400 B elapsed=118982 us
+[compaction] done   job=9 L0->L1 files_in=4 files_out=1 src=4046861 B dst=2616400 B elapsed=223966 us
+[compaction] begin  job=16 L0->L1 files_in=7
+[pnm] MMIO submit: src=8499168 dst=8499168 B (7 input files)
+[pnm] dispatched job=68719476736 db=/tmp/rocksdb_fs_pnm
+[compaction] begin  job=68719476736 L0->L1 files_in=7
+[pnm_unit] job=68719476736 db=/tmp/rocksdb_fs_pnm input_bytes=355
+2024/04/19-14:24:54  ... thread 0: (1000,13000) ops and (31254.9,45461.4) ops/second in (0.031995,0.285957) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,14000) ops and (41673.6,45168.1) ops/second in (0.023996,0.309953) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,15000) ops and (47625.9,45324.1) ops/second in (0.020997,0.330950) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,16000) ops and (47625.9,45461.4) ops/second in (0.020997,0.351947) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,17000) ops and (43485.8,45340.2) ops/second in (0.022996,0.374943) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,18000) ops and (55564.8,45808.5) ops/second in (0.017997,0.392940) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,19000) ops and (43483.9,45680.0) ops/second in (0.022997,0.415937) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,20000) ops and (52639.9,45984.0) ops/second in (0.018997,0.434934) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,21000) ops and (55564.8,46364.7) ops/second in (0.017997,0.452931) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,22000) ops and (31254.9,45367.7) ops/second in (0.031995,0.484926) seconds
+[pnm_unit] job=68719476736 done output_bytes=4912 output_path=/tmp/pnm_secondary
+[pnm] job done (status=0 result_bytes=4912)
+[compaction] done   job=68719476736 L0->L1 files_in=7 files_out=1 src=8450872 B dst=5190150 B elapsed=221966 us
+2024/04/19-14:24:54  ... thread 0: (1000,23000) ops and (76929.0,46191.7) ops/second in (0.012999,0.497925) seconds
+[compaction] done   job=16 L0->L1 files_in=7 files_out=1 src=8499168 B dst=5190150 B elapsed=433934 us
+[compaction] begin  job=29 L0->L1 files_in=13
+[pnm] MMIO submit: src=16974667 dst=16974667 B (13 input files)
+[pnm] dispatched job=124554051584 db=/tmp/rocksdb_fs_pnm
+[compaction] begin  job=124554051584 L0->L1 files_in=13
+[pnm_unit] job=124554051584 db=/tmp/rocksdb_fs_pnm input_bytes=481
+2024/04/19-14:24:54  ... thread 0: (1000,24000) ops and (35720.7,45634.3) ops/second in (0.027995,0.525920) seconds
+2024/04/19-14:24:54  ... thread 0: (1000,25000) ops and (71438.8,46303.3) ops/second in (0.013998,0.539918) seconds
+fillrandom   :      21.637 micros/op 46217 ops/sec 0.541 seconds 25000 operations;   45.8 MB/s
+DB path: [/tmp/rocksdb_fs_pnm]
+2024/04/19-14:24:55  ... thread 0: (1000,1000) ops and (4546.1,4546.1) ops/second in (0.219967,0.219967) seconds
+[pnm_unit] job=124554051584 done output_bytes=4918 output_path=/tmp/pnm_secondary
+[pnm] job done (status=0 result_bytes=4918)
+[compaction] done   job=124554051584 L0->L1 files_in=13 files_out=1 src=16879284 B dst=8869379 B elapsed=364944 us
+[compaction] done   job=29 L0->L1 files_in=13 files_out=1 src=16974667 B dst=8869379 B elapsed=719891 us
+[compaction] begin  job=32 L0->L1 files_in=4
+[pnm] MMIO submit: src=11813872 dst=11813872 B (4 input files)
+[pnm] dispatched job=137438953472 db=/tmp/rocksdb_fs_pnm
+[compaction] begin  job=137438953472 L0->L1 files_in=4
+[pnm_unit] job=137438953472 db=/tmp/rocksdb_fs_pnm input_bytes=292
+2024/04/19-14:24:55  ... thread 0: (1000,2000) ops and (7043.3,5525.7) ops/second in (0.141978,0.361945) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,3000) ops and (20411.1,7300.4) ops/second in (0.048993,0.410938) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,4000) ops and (23259.6,8811.9) ops/second in (0.042993,0.453931) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,5000) ops and (23259.6,10061.9) ops/second in (0.042993,0.496924) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,6000) ops and (23259.1,11112.8) ops/second in (0.042994,0.539918) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,7000) ops and (23259.6,12008.7) ops/second in (0.042993,0.582911) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,8000) ops and (23812.9,12801.9) ops/second in (0.041994,0.624905) seconds
+[pnm_unit] job=137438953472 done output_bytes=4918 output_path=/tmp/pnm_secondary
+[pnm] job done (status=0 result_bytes=4918)
+[compaction] done   job=137438953472 L0->L1 files_in=4 files_out=1 src=11750351 B dst=9551057 B elapsed=326950 us
+[compaction] done   job=32 L0->L1 files_in=4 files_out=1 src=11813872 B dst=9551057 B elapsed=640903 us
+2024/04/19-14:24:55  ... thread 0: (1000,9000) ops and (20836.4,13375.0) ops/second in (0.047993,0.672898) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,10000) ops and (30307.6,14166.5) ops/second in (0.032995,0.705893) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,11000) ops and (34488.7,14968.3) ops/second in (0.028995,0.734888) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,12000) ops and (37042.5,15750.4) ops/second in (0.026996,0.761884) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,13000) ops and (38467.5,16500.0) ops/second in (0.025996,0.787880) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,14000) ops and (38467.5,17201.6) ops/second in (0.025996,0.813876) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,15000) ops and (40006.4,17881.2) ops/second in (0.024996,0.838872) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,16000) ops and (38467.5,18499.9) ops/second in (0.025996,0.864868) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,17000) ops and (40004.8,19104.0) ops/second in (0.024997,0.889865) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,18000) ops and (38467.5,19653.6) ops/second in (0.025996,0.915861) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,19000) ops and (38467.5,20172.9) ops/second in (0.025996,0.941857) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,20000) ops and (38467.5,20664.3) ops/second in (0.025996,0.967853) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,21000) ops and (38467.5,21130.0) ops/second in (0.025996,0.993849) seconds
+2024/04/19-14:24:55  ... thread 0: (1000,22000) ops and (40006.4,21593.1) ops/second in (0.024996,1.018845) seconds
+2024/04/19-14:24:56  ... thread 0: (1000,23000) ops and (40006.4,22034.0) ops/second in (0.024996,1.043841) seconds
+2024/04/19-14:24:56  ... thread 0: (1000,24000) ops and (40006.4,22454.3) ops/second in (0.024996,1.068837) seconds
+2024/04/19-14:24:56  ... thread 0: (1000,25000) ops and (38466.0,22834.5) ops/second in (0.025997,1.094834) seconds
+readrandom   :      43.793 micros/op 22834 ops/sec 1.095 seconds 25000 operations;   14.6 MB/s (16071 of 25000 found)
+
+waitforcompaction(/tmp/rocksdb_fs_pnm): started
+waitforcompaction(/tmp/rocksdb_fs_pnm): finished with status (OK)
+STATISTICS:
+rocksdb.block.cache.miss COUNT : 21900
+rocksdb.block.cache.hit COUNT : 40209
+rocksdb.block.cache.add COUNT : 21900
+rocksdb.block.cache.add.failures COUNT : 0
+rocksdb.block.cache.index.miss COUNT : 0
+rocksdb.block.cache.index.hit COUNT : 0
+rocksdb.block.cache.index.add COUNT : 0
+rocksdb.block.cache.index.bytes.insert COUNT : 0
+rocksdb.block.cache.filter.miss COUNT : 0
+rocksdb.block.cache.filter.hit COUNT : 0
+rocksdb.block.cache.filter.add COUNT : 0
+rocksdb.block.cache.filter.bytes.insert COUNT : 0
+rocksdb.block.cache.data.miss COUNT : 21900
+rocksdb.block.cache.data.hit COUNT : 40209
+rocksdb.block.cache.data.add COUNT : 21900
+rocksdb.block.cache.data.bytes.insert COUNT : 93975792
+rocksdb.block.cache.bytes.read COUNT : 172647120
+rocksdb.block.cache.bytes.write COUNT : 93975792
+rocksdb.block.cache.compression.dict.miss COUNT : 0
+rocksdb.block.cache.compression.dict.hit COUNT : 0
+rocksdb.block.cache.compression.dict.add COUNT : 0
+rocksdb.block.cache.compression.dict.bytes.insert COUNT : 0
+rocksdb.block.cache.add.redundant COUNT : 0
+rocksdb.block.cache.index.add.redundant COUNT : 0
+rocksdb.block.cache.filter.add.redundant COUNT : 0
+rocksdb.block.cache.data.add.redundant COUNT : 0
+rocksdb.block.cache.compression.dict.add.redundant COUNT : 0
+rocksdb.secondary.cache.hits COUNT : 0
+rocksdb.secondary.cache.filter.hits COUNT : 0
+rocksdb.secondary.cache.index.hits COUNT : 0
+rocksdb.secondary.cache.data.hits COUNT : 0
+rocksdb.compressed.secondary.cache.dummy.hits COUNT : 0
+rocksdb.compressed.secondary.cache.hits COUNT : 0
+rocksdb.compressed.secondary.cache.promotions COUNT : 0
+rocksdb.compressed.secondary.cache.promotion.skips COUNT : 0
+rocksdb.bloom.filter.useful COUNT : 0
+rocksdb.bloom.filter.full.positive COUNT : 0
+rocksdb.bloom.filter.full.true.positive COUNT : 0
+rocksdb.bloom.filter.prefix.checked COUNT : 0
+rocksdb.bloom.filter.prefix.useful COUNT : 0
+rocksdb.bloom.filter.prefix.true.positive COUNT : 0
+rocksdb.persistent.cache.hit COUNT : 0
+rocksdb.persistent.cache.miss COUNT : 0
+rocksdb.sim.block.cache.hit COUNT : 0
+rocksdb.sim.block.cache.miss COUNT : 0
+rocksdb.memtable.hit COUNT : 393
+rocksdb.memtable.miss COUNT : 24607
+rocksdb.l0.hit COUNT : 1436
+rocksdb.l1.hit COUNT : 14242
+rocksdb.l2andup.hit COUNT : 0
+rocksdb.compaction.key.drop.new COUNT : 0
+rocksdb.compaction.key.drop.obsolete COUNT : 0
+rocksdb.compaction.key.drop.range_del COUNT : 0
+rocksdb.compaction.key.drop.user COUNT : 0
+rocksdb.compaction.range_del.drop.obsolete COUNT : 0
+rocksdb.compaction.optimized.del.drop.obsolete COUNT : 0
+rocksdb.compaction.cancelled COUNT : 0
+rocksdb.compaction.aborted COUNT : 0
+rocksdb.number.keys.written COUNT : 25000
+rocksdb.number.keys.read COUNT : 25000
+rocksdb.number.keys.updated COUNT : 0
+rocksdb.bytes.written COUNT : 26400000
+rocksdb.bytes.read COUNT : 16456704
+rocksdb.number.db.seek COUNT : 0
+rocksdb.number.db.next COUNT : 0
+rocksdb.number.db.prev COUNT : 0
+rocksdb.number.db.seek.found COUNT : 0
+rocksdb.number.db.next.found COUNT : 0
+rocksdb.number.db.prev.found COUNT : 0
+rocksdb.db.iter.bytes.read COUNT : 0
+rocksdb.number.iter.skip COUNT : 0
+rocksdb.number.reseeks.iteration COUNT : 0
+rocksdb.num.iterator.created COUNT : 0
+rocksdb.num.iterator.deleted COUNT : 0
+rocksdb.no.file.opens COUNT : 31
+rocksdb.no.file.errors COUNT : 0
+rocksdb.stall.micros COUNT : 149983
+rocksdb.db.mutex.wait.micros COUNT : 0
+rocksdb.number.multiget.get COUNT : 0
+rocksdb.number.multiget.keys.read COUNT : 0
+rocksdb.number.multiget.bytes.read COUNT : 0
+rocksdb.number.multiget.keys.found COUNT : 0
+rocksdb.number.merge.failures COUNT : 0
+rocksdb.getupdatessince.calls COUNT : 0
+rocksdb.wal.synced COUNT : 0
+rocksdb.wal.bytes COUNT : 0
+rocksdb.wal.precreate.hit COUNT : 0
+rocksdb.wal.precreate.miss COUNT : 0
+rocksdb.wal.precreate.waited COUNT : 0
+rocksdb.wal.precreate.wait.micros COUNT : 0
+rocksdb.wal.precreate.failed COUNT : 0
+rocksdb.write.self COUNT : 0
+rocksdb.write.other COUNT : 0
+rocksdb.write.wal COUNT : 0
+rocksdb.compact.read.bytes COUNT : 145844
+rocksdb.compact.write.bytes COUNT : 0
+rocksdb.flush.write.bytes COUNT : 25511537
+rocksdb.compact.read.marked.bytes COUNT : 0
+rocksdb.compact.read.periodic.bytes COUNT : 0
+rocksdb.compact.read.ttl.bytes COUNT : 0
+rocksdb.compact.write.marked.bytes COUNT : 0
+rocksdb.compact.write.periodic.bytes COUNT : 0
+rocksdb.compact.write.ttl.bytes COUNT : 0
+rocksdb.number.direct.load.table.properties COUNT : 0
+rocksdb.number.superversion_acquires COUNT : 4
+rocksdb.number.superversion_releases COUNT : 3
+rocksdb.number.superversion_cleanups COUNT : 3
+rocksdb.number.block.compressed COUNT : 0
+rocksdb.number.block.decompressed COUNT : 13508
+rocksdb.bytes.compressed.from COUNT : 0
+rocksdb.bytes.compressed.to COUNT : 0
+rocksdb.bytes.compression_bypassed COUNT : 25445356
+rocksdb.bytes.compression.rejected COUNT : 0
+rocksdb.number.block_compression_bypassed COUNT : 6071
+rocksdb.number.block_compression_rejected COUNT : 0
+rocksdb.bytes.decompressed.from COUNT : 32731104
+rocksdb.bytes.decompressed.to COUNT : 56864133
+rocksdb.merge.operation.time.nanos COUNT : 0
+rocksdb.filter.operation.time.nanos COUNT : 0
+rocksdb.compaction.total.time.cpu_micros COUNT : 0
+rocksdb.row.cache.hit COUNT : 0
+rocksdb.row.cache.miss COUNT : 0
+rocksdb.read.amp.estimate.useful.bytes COUNT : 0
+rocksdb.read.amp.total.read.bytes COUNT : 0
+rocksdb.number.rate_limiter.drains COUNT : 0
+rocksdb.blobdb.num.put COUNT : 0
+rocksdb.blobdb.num.write COUNT : 0
+rocksdb.blobdb.num.get COUNT : 0
+rocksdb.blobdb.num.multiget COUNT : 0
+rocksdb.blobdb.num.seek COUNT : 0
+rocksdb.blobdb.num.next COUNT : 0
+rocksdb.blobdb.num.prev COUNT : 0
+rocksdb.blobdb.num.keys.written COUNT : 0
+rocksdb.blobdb.num.keys.read COUNT : 0
+rocksdb.blobdb.bytes.written COUNT : 0
+rocksdb.blobdb.bytes.read COUNT : 0
+rocksdb.blobdb.write.inlined COUNT : 0
+rocksdb.blobdb.write.inlined.ttl COUNT : 0
+rocksdb.blobdb.write.blob COUNT : 0
+rocksdb.blobdb.write.blob.ttl COUNT : 0
+rocksdb.blobdb.blob.file.bytes.written COUNT : 0
+rocksdb.blobdb.blob.file.bytes.read COUNT : 0
+rocksdb.blobdb.blob.file.synced COUNT : 0
+rocksdb.blobdb.blob.index.expired.count COUNT : 0
+rocksdb.blobdb.blob.index.expired.size COUNT : 0
+rocksdb.blobdb.blob.index.evicted.count COUNT : 0
+rocksdb.blobdb.blob.index.evicted.size COUNT : 0
+rocksdb.blobdb.gc.num.files COUNT : 0
+rocksdb.blobdb.gc.num.new.files COUNT : 0
+rocksdb.blobdb.gc.failures COUNT : 0
+rocksdb.blobdb.gc.num.keys.relocated COUNT : 0
+rocksdb.blobdb.gc.bytes.relocated COUNT : 0
+rocksdb.blobdb.fifo.num.files.evicted COUNT : 0
+rocksdb.blobdb.fifo.num.keys.evicted COUNT : 0
+rocksdb.blobdb.fifo.bytes.evicted COUNT : 0
+rocksdb.blobdb.cache.miss COUNT : 0
+rocksdb.blobdb.cache.hit COUNT : 0
+rocksdb.blobdb.cache.add COUNT : 0
+rocksdb.blobdb.cache.add.failures COUNT : 0
+rocksdb.blobdb.cache.bytes.read COUNT : 0
+rocksdb.blobdb.cache.bytes.write COUNT : 0
+rocksdb.txn.overhead.mutex.prepare COUNT : 0
+rocksdb.txn.overhead.mutex.old.commit.map COUNT : 0
+rocksdb.txn.overhead.duplicate.key COUNT : 0
+rocksdb.txn.overhead.mutex.snapshot COUNT : 0
+rocksdb.txn.get.tryagain COUNT : 0
+rocksdb.files.marked.trash COUNT : 0
+rocksdb.files.marked.trash.deleted COUNT : 0
+rocksdb.files.deleted.immediately COUNT : 30
+rocksdb.error.handler.bg.error.count COUNT : 0
+rocksdb.error.handler.bg.io.error.count COUNT : 0
+rocksdb.error.handler.bg.retryable.io.error.count COUNT : 0
+rocksdb.error.handler.autoresume.count COUNT : 0
+rocksdb.error.handler.autoresume.retry.total.count COUNT : 0
+rocksdb.error.handler.autoresume.success.count COUNT : 0
+rocksdb.memtable.payload.bytes.at.flush COUNT : 25803856
+rocksdb.memtable.garbage.bytes.at.flush COUNT : 492560
+rocksdb.verify_checksum.read.bytes COUNT : 0
+rocksdb.backup.read.bytes COUNT : 0
+rocksdb.backup.write.bytes COUNT : 0
+rocksdb.remote.compact.read.bytes COUNT : 43054690
+rocksdb.remote.compact.write.bytes COUNT : 27339856
+rocksdb.remote.compact.resumed.bytes COUNT : 0
+rocksdb.hot.file.read.bytes COUNT : 0
+rocksdb.warm.file.read.bytes COUNT : 0
+rocksdb.cool.file.read.bytes COUNT : 0
+rocksdb.cold.file.read.bytes COUNT : 0
+rocksdb.ice.file.read.bytes COUNT : 0
+rocksdb.hot.file.read.count COUNT : 0
+rocksdb.warm.file.read.count COUNT : 0
+rocksdb.cool.file.read.count COUNT : 0
+rocksdb.cold.file.read.count COUNT : 0
+rocksdb.ice.file.read.count COUNT : 0
+rocksdb.last.level.read.bytes COUNT : 0
+rocksdb.last.level.read.count COUNT : 0
+rocksdb.non.last.level.read.bytes COUNT : 68183676
+rocksdb.non.last.level.read.count COUNT : 22024
+rocksdb.last.level.seek.filtered COUNT : 0
+rocksdb.last.level.seek.filter.match COUNT : 0
+rocksdb.last.level.seek.data COUNT : 0
+rocksdb.last.level.seek.data.useful.no.filter COUNT : 0
+rocksdb.last.level.seek.data.useful.filter.match COUNT : 0
+rocksdb.non.last.level.seek.filtered COUNT : 0
+rocksdb.non.last.level.seek.filter.match COUNT : 0
+rocksdb.non.last.level.seek.data COUNT : 0
+rocksdb.non.last.level.seek.data.useful.no.filter COUNT : 0
+rocksdb.non.last.level.seek.data.useful.filter.match COUNT : 0
+rocksdb.block.checksum.compute.count COUNT : 21962
+rocksdb.block.checksum.mismatch.count COUNT : 0
+rocksdb.multiget.coroutine.count COUNT : 0
+rocksdb.read.async.micros COUNT : 0
+rocksdb.async.read.error.count COUNT : 0
+rocksdb.table.open.prefetch.tail.miss COUNT : 0
+rocksdb.table.open.prefetch.tail.hit COUNT : 0
+rocksdb.timestamp.filter.table.checked COUNT : 0
+rocksdb.timestamp.filter.table.filtered COUNT : 0
+rocksdb.readahead.trimmed COUNT : 0
+rocksdb.fifo.max.size.compactions COUNT : 0
+rocksdb.fifo.ttl.compactions COUNT : 0
+rocksdb.fifo.change_temperature.compactions COUNT : 0
+rocksdb.prefetch.bytes COUNT : 0
+rocksdb.prefetch.bytes.useful COUNT : 0
+rocksdb.prefetch.hits COUNT : 0
+rocksdb.footer.corruption.count COUNT : 0
+rocksdb.file.read.corruption.retry.count COUNT : 0
+rocksdb.file.read.corruption.retry.success.count COUNT : 0
+rocksdb.number.wbwi.ingest COUNT : 0
+rocksdb.sst.user.defined.index.load.fail.count COUNT : 0
+rocksdb.multiscan.prepare.calls COUNT : 0
+rocksdb.multiscan.prepare.errors COUNT : 0
+rocksdb.multiscan.blocks.prefetched COUNT : 0
+rocksdb.multiscan.blocks.from.cache COUNT : 0
+rocksdb.multiscan.prefetch.bytes COUNT : 0
+rocksdb.multiscan.prefetch.blocks.wasted COUNT : 0
+rocksdb.multiscan.io.requests COUNT : 0
+rocksdb.multiscan.io.coalesced.nonadjacent COUNT : 0
+rocksdb.multiscan.seek.errors COUNT : 0
+rocksdb.prefetch.memory.bytes.granted COUNT : 0
+rocksdb.prefetch.memory.bytes.released COUNT : 0
+rocksdb.prefetch.memory.requests.blocked COUNT : 0
+rocksdb.read.path.range.tombstones.inserted COUNT : 0
+rocksdb.read.path.range.tombstones.discarded COUNT : 0
+rocksdb.file.open.metadata.retrieved COUNT : 0
+rocksdb.file.open.metadata.passed COUNT : 0
+rocksdb.manifest.validation.failure.count COUNT : 0
+rocksdb.db.get.micros P50 : 0.521725 P95 : 0.991277 P99 : 1197.994214 P100 : 4999.000000 COUNT : 25000 SUM : 1048838
+rocksdb.db.write.micros P50 : 0.504215 P95 : 0.958009 P99 : 0.998346 P100 : 16998.000000 COUNT : 25000 SUM : 422938
+rocksdb.compaction.times.micros P50 : 210000.000000 P95 : 363750.000000 P99 : 366944.000000 P100 : 366944.000000 COUNT : 5 SUM : 1118829
+rocksdb.compaction.times.cpu_micros P50 : 210000.000000 P95 : 352947.000000 P99 : 352947.000000 P100 : 352947.000000 COUNT : 5 SUM : 1018847
+rocksdb.subcompaction.setup.times.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.table.sync.micros P50 : 7920.000000 P95 : 12998.000000 P99 : 12998.000000 P100 : 12998.000000 COUNT : 26 SUM : 202971
+rocksdb.compaction.outfile.sync.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.wal.file.sync.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.manifest.file.sync.micros P50 : 1160.250000 P95 : 4175.000000 P99 : 4999.000000 P100 : 4999.000000 COUNT : 35 SUM : 49991
+rocksdb.table.open.io.micros P50 : 0.620000 P95 : 1252.700000 P99 : 2000.000000 P100 : 2000.000000 COUNT : 31 SUM : 7000
+rocksdb.db.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.read.block.compaction.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.read.block.get.micros P50 : 0.510498 P95 : 0.969946 P99 : 1092.381027 P100 : 3000.000000 COUNT : 21931 SUM : 455924
+rocksdb.write.raw.block.micros P50 : 0.504532 P95 : 0.958611 P99 : 0.998973 P100 : 4000.000000 COUNT : 6123 SUM : 81987
+rocksdb.numfiles.in.singlecompaction P50 : 3.750000 P95 : 13.000000 P99 : 13.000000 P100 : 13.000000 COUNT : 5 SUM : 30
+rocksdb.db.seek.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.db.write.stall P50 : 6233.333333 P95 : 16997.000000 P99 : 16997.000000 P100 : 16997.000000 COUNT : 18 SUM : 149983
+rocksdb.sst.read.micros P50 : 0.503521 P95 : 0.956690 P99 : 0.996971 P100 : 2000.000000 COUNT : 22024 SUM : 155974
+rocksdb.file.read.flush.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 104 SUM : 0
+rocksdb.file.read.compaction.micros P50 : 0.588235 P95 : 1300.000000 P99 : 2000.000000 P100 : 2000.000000 COUNT : 20 SUM : 4000
+rocksdb.file.read.db.open.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.get.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.db.iterator.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.verify.db.checksum.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.read.verify.file.checksums.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.sst.write.micros P50 : 0.501389 P95 : 0.952639 P99 : 0.992750 P100 : 3000.000000 COUNT : 12272 SUM : 42993
+rocksdb.file.write.flush.micros P50 : 0.501389 P95 : 0.952639 P99 : 0.992750 P100 : 3000.000000 COUNT : 12272 SUM : 42993
+rocksdb.file.write.compaction.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.file.write.db.open.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.subcompactions.scheduled P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.bytes.per.read P50 : 965.546637 P95 : 1024.000000 P99 : 1024.000000 P100 : 1024.000000 COUNT : 25000 SUM : 16456704
+rocksdb.bytes.per.write P50 : 1056.000000 P95 : 1056.000000 P99 : 1056.000000 P100 : 1056.000000 COUNT : 25000 SUM : 26400000
+rocksdb.bytes.per.multiget P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.compression.times.nanos P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.decompression.times.nanos P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.read.num.merge_operands P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.key.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.value.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.write.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.get.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.multiget.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.seek.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.next.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.prev.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.blob.file.write.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.blob.file.read.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.blob.file.sync.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.compression.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.blobdb.decompression.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.db.flush.micros P50 : 17600.000000 P95 : 24996.000000 P99 : 24996.000000 P100 : 24996.000000 COUNT : 26 SUM : 462929
+rocksdb.sst.batch.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.multiget.io.batch.size P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.index.and.filter.blocks.read.per.level P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.sst.read.per.level P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.level.read.per.multiget P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.error.handler.autoresume.retry.count P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.async.read.bytes P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.poll.wait.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.compaction.prefetch.bytes P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.prefetched.bytes.discarded P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.async.prefetch.abort.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.table.open.prefetch.tail.read.bytes P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.num.op.per.transaction P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.multiscan.op.prepare.iterators.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.multiscan.prepare.micros P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.multiscan.blocks.per.prepare P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+rocksdb.block.key.distribution.cv P50 : 0.000000 P95 : 0.000000 P99 : 0.000000 P100 : 0.000000 COUNT : 0 SUM : 0
+
+Done

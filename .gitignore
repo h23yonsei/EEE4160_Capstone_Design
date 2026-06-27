@@ -1,0 +1,26 @@
+# Root .gitignore for the combined capstone repo.
+# Each subproject keeps its own .gitignore (gem5/.gitignore, rocksdb/.gitignore);
+# this file covers repo-wide build artifacts and generated outputs.
+
+# Build outputs
+build/
+*.o
+*.a
+*.so
+*.lo
+*.la
+
+# Python
+__pycache__/
+*.py[cod]
+
+# gem5 simulation outputs
+# (results already committed under gem5/m5out/ stay tracked; this only stops
+#  newly generated run directories from being added by accident)
+m5out/
+
+# Editor / OS cruft
+.vscode/
+.idea/
+.DS_Store
+*.swp

@@ -1,0 +1,21 @@
+EEE4160_Capstone_Design — Licensing Notice
+===========================================
+
+This repository aggregates two independently licensed components. Each
+retains its original upstream license in its own subdirectory:
+
+  gem5/      BSD 3-Clause License
+             See gem5/LICENSE.
+
+  rocksdb/   Dual-licensed under GPL-2.0 OR Apache-2.0 (at your option).
+             See rocksdb/COPYING (GPLv2) and rocksdb/LICENSE.Apache.
+             LevelDB-derived portions: see rocksdb/LICENSE.leveldb.
+
+No combined or statically linked binary of the two components is produced
+or distributed from this repository: the simulator (gem5) and the database
+(RocksDB) are built and run as separate programs. Each component is governed
+solely by the license in its own subdirectory.
+
+Project-specific additions authored for EEE4160 — including gem5/src/dev/pnm,
+gem5/configs/yonsei, and the rocksdb/tools/pnm_* files — are released under
+the same license as the component in which they reside.

@@ -1,0 +1,24 @@
+#!/bin/bash
+# m5 ops mark the ROI boundary: resetstats clears counters, workbegin/end bracket the benchmark.
+/sbin/m5 resetstats
+/sbin/m5 workbegin
+/usr/local/bin/db_bench \
+    --db=/tmp/rocksdb_fs_baseline \
+    --benchmarks=fillrandom,readrandom,waitforcompaction \
+    --num=25000 \
+    --seed=42 \
+    --value_size=1024 \
+    --compaction_style=0 \
+    --block_size=4096 \
+    --cache_size=8388608 \
+    --write_buffer_size=1048576 \
+    --max_write_buffer_number=2 \
+    --max_bytes_for_level_base=16777216 \
+    --disable_wal=1 \
+    --stats_interval=1000 \
+    --level0_file_num_compaction_trigger=2 \
+    --compression_type=none \
+    --statistics=1
+/sbin/m5 workend
+/sbin/m5 dumpresetstats
+/sbin/m5 exit
